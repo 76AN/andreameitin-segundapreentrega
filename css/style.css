@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+    box-sizing: border-box; 
+    font-family: Verdana, sans-serif;
+}
+
+/*estilo general*/
+
+body{
+    background-color: rgb(203, 239, 243);
+}
+
+ 
+/*estilos de header*/
+
+header{
+    height: 10px;
+    display: flex; 
+    padding: 10rem;  
+    justify-content: space-around; /*row*/
+    align-items: end;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 10px; 
+}
+
+header nav ul li{
+    font-size: 20px;
+}
+
+
+
+/*estilos de main index*/
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+
+}
+
+main .texto{
+    text-align: center;
+    
+}
+
+/*estilos section*/
+
+section{
+    background-color: powderblue;
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+section div h3{
+    text-align: center;
+}
+
+section div div h3 p{
+    text-align: center;
+}
+
+/*estilos de main sabores*/
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+main .texto {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+main .texto div ul li{
+    list-style: none;
+    display: flex;
+    gap: 10px; 
+    text-align: right;
+    background-color:powderblue;
+}
+
+
+
+
+/* estilos del footer*/
+
+footer{
+    
+    margin: 10px 10px 10px 10px;
+    
+}
+
+footer p{
+    text-align: center;
+    color: powderblue;
+
+}
+
+
+/*estilos del boton*/
+
+main .texto h2 p{
+    background-color:powderblue; 
+    display: flex;
+}
+
+
+main .texto .contactos{
+    background-color:powderblue;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 50px;
+    display: flex;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.contactos{
+    color:aliceblue;
+    
+}    
+
+/*novedades*/
+/* estilos mobile*/
+
+
+
+/*.contenedor .img-munstaddl, .img-munstachoco{
+    display: none;
+}*/
+
+.contenedor div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+   
+.contenedor{
+    height: 70vp; /*altura de row*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 1rem ;
+    margin: 1rem 1rem;
+}
+
+/*mq de tablet*/
+@media screen and (min-width:600px){
+
+.contenedor{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+
+.contenedor .img-munsta{
+    grid-column: span 2;
+ }
+}
+
+/*mq de desktop*/
+@media screen and (min-width:1024px){
+   
+.contenedor .img-munstaddl, .img-munstachoco{
+        display: block;
+}
+
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 3fr);
+}
+
+.contenedor .img-gio, .contenedor .img-cannolis{
+        grid-row: span 2;
+}
+
+.contenedor .img-munstaddl, .img-munstachoco{
+        grid-column: span 1;
+} 
+
+.contenedor .img-munsta{
+        grid-row: span 1;
+}
+}
+
+/*postres*/
+
+.img-postres{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center; 
+    align-items: top;   
+}
+
+
+
+
+
+/*.img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat();
+}*/
+
+.img .mostrador{
+    height: 800px;
+    /*display: grid;*/
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+   justify-self: center;
+    align-items: center;
+}
+
+
+/*.mostrador{
+    width: 50%;
+    height: 50%%;
+}*/
+
+
+
+
+/*estilos de caja*/
+
+/*
+.menu{
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+}
+
+
+
+.menu li{
+
+    background-color: white;
+
+    display: inline-block;
+
+    padding: 5px;
+
+    margin: 5px;
+
+    color: gray ;
+
+    text-transform: uppercase;
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*ul.navegacion{
+    padding: 1px;
+    margin-right: 1px;
+    list-style-type: none;
+}
+
+ul.navegacion li a{
+   font-family: Verdana, sans-serif; 
+   text-decoration: none;
+   text-align: right; 
+}
+
+main.imageFondo{
+    background-image: url("../image/istockphoto-1175878760-1024x1024.jpg");
+}
+
+section{
+    padding: 50px 38px 20px 60px;
+    margin-left: 40px;
+}
+
+section div ´{
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+}
+
+ sectiob div p{
+    line-height: 4;
+ }
+ 
+h1{
+    color:rgb(215, 252, 247);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2{
+    color:rgb(215, 252, 247);
+    font-size: 1,5rem;
+}
+
+h3{
+    font-size: 1rem;
+    text-align:center;
+    color:rgb(242, 243, 235);
+}
+
+.bordesRedondeados{
+    border-radius: 10px;
+}*/
